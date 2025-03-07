@@ -317,13 +317,35 @@ i {
     align-items: center;
 }
 
-#team h2{
+#team .square{
     display: flex;
-    font-size: 1.3rem;
-    font-weight: bold;
-    
+    justify-content:center;
 }
 
+#team h2{
+    /* display: flex; */
+    width: 50%;
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin: 0 auto;
+}
+
+#team .square-title{
+    color: var(--main-color);
+}
+
+
+#team .employee-name{
+    color: var(--main-color);
+    display: flex;
+    justify-content:center;
+}
+
+#team .employee-role{
+    display: flex;
+    justify-content:center; 
+}
 
 .employees{
     display: flex;
@@ -331,6 +353,7 @@ i {
     padding: 2rem;
     align-items: center;    
 }
+
 .employees .employees-name{
    color: var(--main-color);
    display: flex;
