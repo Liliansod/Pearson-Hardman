@@ -270,7 +270,6 @@ i {
     text-transform: uppercase;
 }
 
-
 /* ******** */
 /*Depoimentos*/
 
@@ -333,7 +332,6 @@ i {
     color: var(--main-color);
 }
 
-
 #team .employee-name{
     color: var(--main-color);
     display: flex;
@@ -357,7 +355,6 @@ i {
    display: flex;
    justify-content: center;
 }
-
 
 /* *** CONTATO *** */
 
@@ -437,7 +434,6 @@ i {
 #footer a {
   color: var(--primary-text-color);
 }
-
 .contact-info,
 .links-container {
   width: 20%;
@@ -504,3 +500,5 @@ i {
 .phone-info {
   color: var(--secondary-color);
 } 
+
+/* */
