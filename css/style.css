@@ -501,4 +501,146 @@ i {
   color: var(--secondary-color);
 } 
 
-/* */
+/* Mobale navbar*/
+#menu,
+#close-menu{
+    font-size: 2rem;
+    padding: 1rem;
+    /* Oculta tato o menu amburguer quando to x*/
+    display: none;
+}
+
+#close-menu{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+/* Fundo do menu*/
+#mobile-navbar{
+    position: fixed; /*Ao rolar o site o menu fica fixo na lateral*/
+    top: 0;
+    left: 100%;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.95); /* transparencia do site */
+    display: flex;
+    flex-direction: column; 
+    padding: 4rem 2rem; 
+    transition: 0.4s; /* Trasição que diminui a velocidade do menu*/
+    z-index: 5; /* Posiciona o menu a frente do site e posições, sobrepondo o site*/
+}
+/* Ativado e desativado o menu que será gerado pelo javascript*/
+#mobile-navebar.menu-active{
+    left: 0; /* Posição que aparece o menu*/
+}
+/*Linkes do menu*/
+#mobile-navbar a{
+    color: var(--primary-text-color);
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border-bottom: 1px solid var(--main-color); /*Linha de borda sem tracejado(solid) e vermelha*/
+}
+
+
+
+
+
+/*Sinaliza o tamanho que será trocado dependendo do aparelho de acesso ao site (Responsividade) 
+Tudo que estiver dentro dessa resposividade será alterado conforma o ajuste colocado */
+@media (max-width:450px){
+    body{
+        /*Esconder o scrool lateral se sobrar a direita*/
+        overflow-x: hidden; 
+    }
+    i{
+        padding: 1.5rem;
+        font-size: 2rem;
+    }
+    #navbar{
+        /*Aqui ele tira o menu da págigina quando for acessado pelo celular*/
+        display: none;
+    }
+    #menu,
+    #close-menu{
+        /*Oculpar todo esquema de caixa*/
+        display: block;
+    }
+
+    /* Banner e texto do banner */
+    .banner{
+        max-width: 100%;
+        padding: 4rem 2rem; 
+    }
+    .banner h2{
+        font-size: 3rem;
+    }
+    .banner p{
+        font-size: 1rem;
+    }
+    /* Áreas de atuação */
+
+    .btn{
+        align-self: initial; /* Alinhamento só do botão*/
+    }
+    .image-container{
+        flex: 1 1 100%;
+    }
+    #other-services{
+        flex-wrap: wrap; /*Flexiona um em baixo do outro*/
+    }
+
+    /* Sobre nós */
+    #about{
+
+    }
+    #about-text,
+    #about-data{
+        flex: 1 1 100%;
+    }
+    .about-description{
+        gap: 1rem;
+    }
+    .about-description i{
+        padding: 0;
+        min-width: 40px;
+        font-size: 1.5rem;
+    }
+    #about #about-data .data{
+        width: 100%;
+        border: none;
+        border-bottom: 1px solid var(--secondary-text-color);
+    }
+    #about #about-data .data i{
+        font-size: 2.5rem; /* Tamanho do icone*/
+    }
+    #about #about-data .data .number{
+        font-size: 2.5rem; /*Tamanho dos numeros*/
+    }
+
+    /* Depoimentos */
+    .text-container{
+        text-align: center;
+        padding: 2rem;
+    }
+    .text-container .section-title{
+        font-size: 1.9rem;
+    }
+    .text-container .section-subtitle{
+        font-size: 1.5rem;
+    }
+
+    /* Colaboradores */
+
+    #team{
+        margin-top: 2rem;
+    }
+    #team h2{
+        font-size: 2.5rem;
+    }
+    .employees{
+        flex-wrap: wrap;
+    }
+
+}
