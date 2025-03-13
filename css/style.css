@@ -592,9 +592,6 @@ Tudo que estiver dentro dessa resposividade será alterado conforma o ajuste col
     }
 
     /* Sobre nós */
-    #about{
-
-    }
     #about-text,
     #about-data{
         flex: 1 1 100%;
