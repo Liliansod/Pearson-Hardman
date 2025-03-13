@@ -679,10 +679,14 @@ Tudo que estiver dentro dessa resposividade será alterado conforma o ajuste col
         margin-bottom: 1rem;
     }
 
+    .links-container{
+        margin-bottom: 1rem;
+    }
+
     .links-container h4{
         margin-bottom: 1.5rem;
     }
-    
+
 }
 
 
