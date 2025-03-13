@@ -642,5 +642,47 @@ Tudo que estiver dentro dessa resposividade será alterado conforma o ajuste col
     .employees{
         flex-wrap: wrap;
     }
+    #contact{
+        padding-bottom: 0;
 
+    }
+    #contact-information{
+        padding: 7rem 1rem;
+    }
+    #contact-information .form-control{
+        flex-direction: column;
+    }
+    #contact-information .btn{
+        align-self: auto;
+    }
+
+    /*Roda pé - Footer*/
+    #footer{
+        flex-wrap: wrap;
+    }
+
+    .contact-info,
+    .links-container{
+        width: 100%;
+    }
+
+    #footer i{
+        font-size: 2rem;
+        padding: 1rem;
+    }
+
+    .footer-brand{
+        text-align: center;
+    }
+
+    .networks{
+        margin-bottom: 1rem;
+    }
+
+    .links-container h4{
+        margin-bottom: 1.5rem;
+    }
+    
 }
+
+
