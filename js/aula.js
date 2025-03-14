@@ -34,3 +34,15 @@ for(let i = 0; i < arr.length; i++){
     // Templete literal, é o uso da crase `
     console.log(`O valor da repetição é: ${arr[i]}`) 
 }
+
+// Função 
+function soma(){
+    console.log(22+11);
+}
+soma();
+
+function calcular(a,b){
+    console.log(a*b)
+}
+
+calcular(12,12);
