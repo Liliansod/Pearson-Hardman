@@ -7,8 +7,8 @@ let sllideIndex = 0;
 
 function showSlides(){
     for(let i=0; i < slides.length; i++){
-        slides[i].classList.remove("active") //Propriedade classList lista o Array
-        dots[i].classList.remove("active")
+        dots[i].classList.remove("active");
+        slides[i].classList.remove("active"); //Propriedade classList lista o Array
     }
 
     sllideIndex++; //Avançando a variável
@@ -16,9 +16,9 @@ function showSlides(){
         sllideIndex = 1;
     }
 
-    slides[sllideIndex -1].classList.add("active")
-    dots[sllideIndex -1].classList.add("active")
-    setTimeout(showSlides, 3000) //3 segundo é 3000 (Ação que realiza a rotação entre o side)
+    slides[sllideIndex -1].classList.add("active");
+    dots[sllideIndex -1].classList.add("active");
+    setTimeout(showSlides, 3000); //3 segundo é 3000 (Ação que realiza a rotação entre o side)
 }
 
 //Inicialização
